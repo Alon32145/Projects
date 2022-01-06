@@ -1,5 +1,0 @@
-﻿  w3p2.c
-C:\Users\alonr\OneDrive\Рабочий стол\Seneca\IPC 144\ws4\w3p1\w3p1\w3p2.c(25,9): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
-C:\Users\alonr\OneDrive\Рабочий стол\Seneca\IPC 144\ws4\w3p1\w3p1\w3p2.c(30,83): warning C4474: 'printf' : too many arguments passed for format string
-C:\Users\alonr\OneDrive\Рабочий стол\Seneca\IPC 144\ws4\w3p1\w3p1\w3p2.c(30,83): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-  w3p1.vcxproj -> C:\Users\alonr\OneDrive\Рабочий стол\Seneca\IPC 144\ws4\w3p1\Debug\w3p1.exe
