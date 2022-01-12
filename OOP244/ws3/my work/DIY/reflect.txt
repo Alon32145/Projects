@@ -1,0 +1,13 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 06/13/2021
+//email: araigorodetsky@myseneca.ca
+
+
+In this workshop I was introduced to classes for the first time. For some reason I overcomplicated things for my self with understanding how methods work.
+I probably struggled the most with editing the lines to print purely because of syntax.
+Otherwise the lab went quite smoothly I used the code from the lab we had in class few days prior.
+The most significant modifications I made to the code were converting the public methods double price and tax to match the new variables required for this lab.
+Other than that I switched the type of and name of few more variables in food.h and CalorieList.h to suit the DIY.
+In conclusion the lab was not complicated but it was a bit challenging as it tested my skills on a new subject that I was not familiar with before.
+
