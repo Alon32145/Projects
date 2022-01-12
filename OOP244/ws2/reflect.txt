@@ -1,0 +1,21 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 6/6/2021
+//email: araigorodetsky@myseneca.ca
+
+1)
+cout.
+During the lab in both part 1 and part 2 cout is used to display data (like printf).
+cout works by copying data from system memory into an output stream, in the copying process cout copies system memory into a sequence of characters.
+
+Another thing that was used in the lab is function overloading.
+In CPP you can have a function that has multiple meaning. The way that the compiler can distinguish each function meaning it needs to use by the different parameters each function has.
+
+
+
+2)
+An out parameter represents information which is passed from the function back to its caller.  
+An in parameter represents information which is being passed from the caller to the function. Input parameters are usually values or const references.
+
+An example of in parameter can be found in the last part of DIY when the population of Canada is calculated.
+In this case information from the struct  pointer is being passed into a function display and is being stored in totalPop.
