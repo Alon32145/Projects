@@ -1,0 +1,23 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 16/10/2021
+//email: araigorodetsky@myseneca.ca
+
+
+//I have done all the coding by myself and -only copied the code that my professor provided to complete my workshops and assignments.
+
+A functor is a instance of a class that overloads the function call operator. Since a functor is an instance of a class it can store information. This allows the client code to perform the same operation multiple times in different locations in the code unlike a lambda expression which is meant to be used in a localized region in the source code.
+
+In the workshop the spellchecker class defined a functor. The functor had information regarding how to map misspelled words to correctly spelled words and held that information through its lifetime.
+
+The public overloaded function call
+operator (public member function) simply performs the operation performs this mapping operation based on the information that was stored. It will do the same operation each time it is called since the data stored in the object has not been modified.
+The spellcheker's one argument constructor generates an exception if the file failed to open. In that case an exception is thrown with the throw expression causing the run time to step out of the constructor in search of the called that was nested within a try catch block.
+Run time will continue stepping out of functions until it steps out of a function call that is nested within a try catch block.
+Once the try block was found, the run time will start comparing the type of the catch block with the type that was thrown which was a message of type const char *.
+The first catch block that matches is the selected handler which can report the error to the user by printing the error messages passed with the throw expression. To achieve the same results without using exceptions to report that the file failed to open could be having the client be responsible for opening the file. If the client was able to successfully open the file, the client can pass the file object to the constructor. If the client was not able to successfully open the file, the client code can report an error to the user (if else construct in practice).
+
+Both Move and Book modules contain a similar logic. A possible way of avoiding duplication is to create a templated helper function that accepts a variable amount of arguments each of any type, that is, a variadic template (therefore a variable amount of template parameters). This function will query the type of the argument and parse the next available field in the string passed to the function. The string parsing logic could vary between types which is why it is done first. This logic is repeated for each argument that was passed to this variadic template function.
+
+both classes require a default constructor due the static array itself when first defined and the resource that the collection class manages requires the default constructor to exist.
+When a static allocated array is defined or when memory is allocated of the heap with the new expression to store instance of a class the run time must invoke the default constructor for each element in the array to construct new allocated elements
