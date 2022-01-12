@@ -1,0 +1,70 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 13/11/2021
+//email: araigorodetsky@myseneca.ca
+
+
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+1).
+
+I have used the following STL functions.
+
+std::copy(): (used in SongCollection::display())-> This STL algorithm was 
+used to copy, in this case insert, the data stored in each element (Song 
+object) within the vector, into an output stream with the use of a 
+ostream_iterator. This function was used primarily to test out the 
+ostream_iterator.
+
+std::accumulate(): (used in SongCollection::display()) -> This STL algorithm 
+was used sum the total lengths of the songs.
+
+std::copy_if(): (used in SongCollection::getSongsForArtist())-> This STL 
+algorithm was used to copy the song objects from the container to a local 
+list container by inserting into the back of the container (using 
+back_inserter) only if that element met a specific condition. Since we were 
+returning a new container that will contain all the songs made by 
+an artist and not modifying the data member(container the 
+class in managing), we must copy the contents of one container to the other.
+
+std::replace_if() (used in SongCollection::cleanAlbum())-> Since this 
+function only performed a replace operation only if a condition is true.
+
+std::sort() (used in SongCollection::sort)-> This STL algorithm was used 
+to sort the contents of the container by a specific field.
+
+std::any_of() (used in SongCollection::inCollection())-> This STL 
+algorithm was used to check if any elements satisfied the predicate. The 
+predicate being if an artist's name existed within the container, that is, if 
+any artist name field within any Song object is equal to the parameter, return 
+true.
+
+2).
+
+There are many advantages of using STL algorithms over implementing the functionality yourself.
+Those benefits are:
+
+- faster development times due to not requiring to create the algorithm myself (not having to plan,
+debug logical error etc). Since the STL algorithm library contains many 
+common operations that can be performed on a container, I can simply make 
+use of that algorithm and not have to worry about any details the algorithm 
+may have.
+
+- Client code. can treat the functions like a black box and assume that the function will work as intended.
+The STL library consists of very complex algorithms that would have required a lot of testing during its development.
+
+- code reuse.  as 
+the name suggests, handles elements within a data structure in a generic 
+form allowing heavy reuse of code. They allow code reuse through the use of 
+iterators. This means that at any point in time, if change would need to be made the 
+container that was have used, most of logic that uses the container will 
+most likely not need to change.
+
+3).
+
+Possible solution would be to define an enumeration type where each symbolic constant represents an admissible sorting option to the client.
+For example, we can have 3 constants, length, album and title.
+The parameter list would be updated to accept only these symbolic constants (length, album and title) instead of receiving an string.
+If the client code misspells the symbolic constant or tries to pass an entity of different type the compiler would throw an error.
+
+
