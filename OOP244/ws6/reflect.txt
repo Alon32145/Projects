@@ -1,0 +1,24 @@
+// Name: Alon Raigorodetsky
+// ID: 109763201
+// Email: araigorodetsky@myseneca.ca
+// Date: 2021/07/06
+
+// Section: NEE
+
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+During this lab we had covered derived classes and functions.
+
+During the lab we had created a friend class called TextFile.
+
+
+A derived class is a class that is created from an existing class.
+A derived class inherits all of members and member function from base class.
+
+In order to define a derived class you need to name the derived class : followed by a base class name.
+
+Also the derived class had to be fully private due to the task of class line which is to encapsulate a single line of text. In order to achieve it we had to make class Text File fully private so Line could not access it.
+
+Other then that the lab went smoothly I did encounter a few problem memory problems with Line::operator but it was due to improperly loading the save As derived class function member.
+Other then that the lab went smoothly the error was quite simple to debug and I did not experience and other problems with the code.
+

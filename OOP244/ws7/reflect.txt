@@ -1,0 +1,24 @@
+// Name: Alon Raigorodetsky
+// ID: 109763201
+// Email: araigorodetsky@myseneca.ca
+// Date: 2021/07/18
+
+// Section: NEE
+
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+During this lab I learned what is a derived class and how it operates.
+In this lab we have 2 classes the main one being MotorVehicle and the derived one being
+Truck.
+
+In addition to using derived classes in this workshop I am also using them in the milestones.
+
+What is a derived class? A derived class is a class is class which is created from an existing class.
+The derived class inherits all members and member functions of the original class (base class).
+The derived class can have more functionality with respect to the original class and can easily access the original class.
+
+
+In addition to derived classes we had also used custom I/O operators.
+We had modified those operators by slightly changing the data that they return.
+
+One thing we also did is using the derived class we overloaded a few functions from the original class such as the read and write functions .
