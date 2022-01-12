@@ -1,0 +1,24 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 27/11/2021
+//email: araigorodetsky@myseneca.ca
+
+
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+On this workshop, I learned about multi-threading, which are the division 
+of the workload in a program in separate, concurrent threads to be executed in the CPU. This means 
+that a task can be split in smaller parts and be executed at the same time at run time or that 
+multiple individual tasks can be executed at the same time. This speeds up processing and reduces 
+response and idle time.
+
+1. 
+A binary file is usually very much smaller than a text file that contains an equivalent amount of data. Small files save storage space, can be transmitted faster, and are processed faster.
+When data is stored in a file in the binary format, reading and writing data is faster because no time is lost in converting the data from one format to another format. Such files are called binary files.
+2.
+Binding guarantees that the copy of the arguments cannot be lost even if we reassign a new value to the variable bind still tracking the original value.
+bind have the task to do a copy of the values.
+
+3. 
+Multithreading allows the execution of multiple parts of a program at the same time. The main benefit that multi-threading provides is performance increase.
+In this workshop I accomplished this task by creating 4 threads and assigned them to convert_p* variables which calls the bind function.

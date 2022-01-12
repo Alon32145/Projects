@@ -1,0 +1,45 @@
+//Name: Alon Raigorodetsky
+//User ID: 109763201
+//Date: 19/11/2021
+//email: araigorodetsky@myseneca.ca
+
+
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+(1) In the mergeSmart() function, I have used a unique smart
+pointer. The advantage of a unique smart pointer over the raw pointer syntax is
+that regardless of the flow of control of the program, we can guarantee that
+the resource (dynamically allocated Product object) is deallocated whenever the
+smart pointer object itself goes out of scope. If the validate() member
+function throws an exception, the run time escapes the normal flow of the
+application and rather just simply unwinds the function call stack until it
+reaches a caller from a function within a try catch block. That is, control
+will return from the call to mergeSmart() before control reaches its
+terminating closing brace skipping code within its definition. When the stack
+unwinds from the mergeSmart() function, all objects of automatic storage
+duration allocated within are simply popped off the stack. Since the unique
+smart pointer itself was allocated off the stack, it too will be deallocated
+due to stack unwinding which invokes its destructor which in turn deallocates
+the dynamically allocated Product object (it’s owned resource) upon its own
+destruction. In short smart pointers in general allow for exception safety.
+
+(2) In the raw pointer solution, if the validate() member function threw an
+exception, the stack would do an unwinding process which would deallocate all objects of
+automatic storage duration but not dynamic storage duration which causes an
+important issue that requires our attention. In the mergeRaw(),
+we store the address of a dynamically allocated Product object in a
+raw pointer. if the validate() member function were to throw an exception, the
+raw pointer will simply go out of scope due to stack unwinding skipping the
+delete expression required to deallocate the memory associated with the pointer
+as it has dynamic storage duration which ultimately causes a memory leak. In
+order to fix the memory leak, although not required by the workshops
+specifications, is to wrap the call to the validate() member function in a try
+catch block. The try catch block will allow the exception to be handled within
+the same scope as the raw pointer allowing the chosen exception handler to
+deallocate memory allocated to the raw pointer. A possible issue arises when
+more than one function in the application dynamically allocate an object of
+type Product and also subsequently call the validate() member function. For
+every occurrence of this logic the programmer is responsible to wrap the call
+to the validate() member function within a try catch in order to trap any
+possible memory leaks.
