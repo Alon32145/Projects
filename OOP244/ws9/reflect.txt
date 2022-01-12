@@ -1,0 +1,19 @@
+// Name: Alon Raigorodetsky
+// ID: 109763201
+// Email: araigorodetsky@myseneca.ca
+// Date: 2021/08/01
+
+// Section: NEE
+
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+
+The mechanism of templates in C++ allows solving the problem of unification of algorithm for different types: it's not necessary to write different functions for integer, real or user types - it's enough to create a generalized algorithm, not depending on the data type, based only on the common properties.
+
+There are function templates and class templates.
+
+Function templates are a generalized description of the behavior of functions, which can be called for objects of different types. In other words, a function template (template function, generalized function) is a family of different functions (or a description of an algorithm). The description of a function template is like an ordinary function: the difference is that some elements are undefined (types, constants) and parameterized.
+
+Templates of classes is the generalized description of the user's type, in which the attributes and operations of the type can be parameterized. They are constructs that can be used to generate actual classes by substituting specific arguments instead of parameters.
+

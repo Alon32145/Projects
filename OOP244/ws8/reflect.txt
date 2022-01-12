@@ -1,0 +1,18 @@
+// Name: Alon Raigorodetsky
+// ID: 109763201
+// Email: araigorodetsky@myseneca.ca
+// Date: 2021/07/24
+
+// Section: NEE
+
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+In this lab we had worked with virtual functions.
+
+A virtual function in C++ is a member function of a base class that you override in a derived class. It is declared with the virtual keyword. It is used to tell the compiler to perform dynamic binding or late function binding.
+
+Proper use of virtual functions allowes polymorphism. What is polymorphism?
+
+polymorphism is an attribute that allows the same interface to be used when implementing a whole class of different actions. The choice of which action to take is determined by the specific situation.
+
+polymorphism is important for object-oriented programming because it allows functions of a base class to be overridden in descendant classes in order to have their version applied to that particular class. Thus, a base class defines a common interface that all derived classes have, and at the same time, polymorphism allows derived classes to have their own method implementations.
