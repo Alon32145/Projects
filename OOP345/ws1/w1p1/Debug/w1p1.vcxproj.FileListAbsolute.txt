@@ -1,0 +1,2 @@
+C:\Users\alonr\OneDrive\Рабочий стол\Seneca\Sem 3\OOP\ws1\w1p1\Debug\ws.exe
+C:\Users\alonr\OneDrive\Рабочий стол\Seneca\Sem 3\OOP\ws1\w1p1\Debug\ws.pdb
