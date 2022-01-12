@@ -1,0 +1,2 @@
+C:\Users\alonr\OneDrive\Рабочий стол\Seneca\Sem 2\OOP224\ws1\WS1\in-lab\Debug\in-lab.exe
+C:\Users\alonr\OneDrive\Рабочий стол\Seneca\Sem 2\OOP224\ws1\WS1\in-lab\Debug\in-lab.pdb
